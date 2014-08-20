@@ -1,4 +1,4 @@
-name:         BuiltWithZo2
+name:         Built with Zo2
 highlighter:  pygments
 source:       .
 destination:  ./_gh_pages
@@ -9,3 +9,6 @@ paginate:     10
 encoding:     UTF-8
 permalink:    pretty
 timezone:     Asia/Ho_Chi_Minh
+
+# Custom variables
+ga_code:      UA-48910417-7
