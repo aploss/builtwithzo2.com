@@ -5,3 +5,141 @@ body {
   margin: 0 auto;
   width: 1000px;
 }
+.header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 50px;
+  padding: 100px 0 30px 0;
+  text-align: center;
+}
+.header h1 {
+  font-size: 100px;
+  font-weight: 700;
+}
+.header h1 a {
+  color: #000;
+}
+.header h1 a:hover {
+  text-decoration: none;
+}
+.header p {
+  font-size: 30px;
+}
+.footer {
+  border-top: 1px solid #e5e5e5;
+  clear: both;
+  padding: 20px 0 200px 0;
+  margin-top: 50px;
+}
+.post {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.post h2 {
+  font-size: 40px;
+}
+.post h2 a {
+  color: #333;
+}
+.post .post-date {
+  padding-bottom: 20px;
+}
+.browser-frame {
+  border-radius: 5px;
+  border: 2px solid #CCC;
+  width: 100%;
+  max-width: 1004px;
+}
+.browser-top-bar {
+  border-bottom: 2px solid #CCC;
+  width: 100%;
+  float: left;
+}
+.browser-address {
+  border-radius: 5px;
+  background: #efefef;
+  height: 25px;
+  line-height: 25px;
+  float: right;
+  margin: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+.browser-button-wrapper {
+  padding: 12px 0 0 10px;
+  float: left;
+}
+.browser-button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #CCC;
+}
+.browser-container > p {
+  padding: 0;
+  margin: 0;
+}
+.browser-container img {
+  width: 100%;
+  max-width: 1000px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.paginator {
+  width: 100%;
+  max-width: 1004px;
+  margin-bottom: 40px;
+  float: left;
+}
+.paginator a,
+.paginator span {
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.paginator span {
+  color: #bfbfbf;
+}
+.paginator a:hover {
+  background-color: #44b1f6;
+  text-decoration: none;
+  color: white;
+  border-color: #44b1f6;
+}
+.paginator .older {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.paginator .newer {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #e5e5e5;
+}
+@media (min-width: 1200px) {
+  .browser-address {
+    width: 91%;
+  }
+}
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .browser-address {
+    width: 89%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .browser-address {
+    width: 83%;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .browser-address {
+    width: 74%;
+  }
+}

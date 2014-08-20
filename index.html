@@ -3,3 +3,44 @@ layout: default
 title: Built with Zo2 framework
 ---
 
+<ul class="posts list-unstyled">
+    {% for post in paginator.posts %}
+    <li class="post">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+        <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+
+        <div class="browser-frame">
+            <div class="browser-top-bar">
+                <span class="browser-button-wrapper">
+                    <span class="browser-button"></span>
+                    <span class="browser-button"></span>
+                    <span class="browser-button"></span>
+                </span>
+                <span class="browser-address"><a href="http://{{ post.source }}">{{ post.source }}</a></span>
+            </div>
+            <div class="browser-container">
+                {{ post.content }}
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+<div class="paginator">
+    {% if paginator.next_page %}
+        <a href="/page/{{paginator.next_page}}" class="older">Older</a>
+    {% else %}
+        <span class="older">Older</span>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+            <a href="/" class="newer">Newer</a>
+        {% else %}
+            <a href="/page/{{paginator.previous_page}}" class="newer">Newer</a>
+        {% endif %}
+    {% else %}
+        <span class="newer">Newer</span>
+    {% endif %}
+</div>
