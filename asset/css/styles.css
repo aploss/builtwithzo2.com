@@ -43,6 +43,21 @@ body {
 .post .post-date {
   padding-bottom: 20px;
 }
+.post .post-share {
+  padding-bottom: 20px;
+}
+.post .post-share-twitter {
+  color: #6cdfea;
+}
+.post .post-share-facebook {
+  color: #3b5998;
+}
+.post .post-share-google {
+  color: #e34429;
+}
+.post .post-share-pinterest {
+  color: #c5282f;
+}
 .browser-frame {
   border-radius: 5px;
   border: 2px solid #CCC;

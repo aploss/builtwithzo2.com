@@ -7,6 +7,41 @@ layout: default
 
     <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
 
+    <ul class="post-share list-inline">
+        <li>
+            <a class="post-share-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}-{{ site.name }}&url={{ site.url }}{{ page.url }}">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="post-share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="post-share-google" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="post-share-pinterest" href="https://www.pinterest.com/pin/create/button?url={{ site.url }}{{ page.url }}">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+
     <div class="browser-frame">
         <div class="browser-top-bar">
             <span class="browser-button-wrapper">
