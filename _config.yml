@@ -11,4 +11,5 @@ permalink:    pretty
 timezone:     Asia/Ho_Chi_Minh
 
 # Custom variables
-ga_code:      UA-48910417-7
+google_analytics:           UA-48910417-7
+google_site_verification:   1zcCEq4g4d_KLBpRbu-I88uaTrLkb6JY7JcORNGo2J4
